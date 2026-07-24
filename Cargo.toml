@@ -1,0 +1,20 @@
+[package]
+name = "obscura_proto"
+version = "1.0.1"
+edition = "2021"
+authors = ["Kretoffer <20kretovartem000@gmail.com>"]
+license = "MIT"
+description = "Rust bindings for the ObscuraProto C++ library — end-to-end encrypted WebSocket communication"
+repository = "https://github.com/ObscuraEcosystem/rustObscuraProto"
+readme = "README.md"
+keywords = ["encryption", "websocket", "networking", "noise-protocol", "e2ee"]
+categories = ["network-programming", "cryptography", "web-programming"]
+
+[lib]
+crate-type = ["lib", "staticlib"]
+
+[dependencies]
+cxx = "1.0"
+
+[build-dependencies]
+cxx-build = "1.0"
